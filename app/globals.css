@@ -1,0 +1,462 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root {
+  --white: #FEF9EA;
+  --saffron: #F4C430;
+  --screamingreen: #6f6;
+  --ultramarine: #4166f5;
+  --shockingpink: #fc0fc0;
+  --spacecadet: #131F49;
+}
+
+body {
+  font-family: var(--font-market);
+  background-color: var(--white);
+  color: var(--white);
+  background: var(--spacecadet);
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(45,3,35,1) 31%, rgba(65,102,245,0.396796218487395) 50%, rgba(121,7,92,.6) 69%, rgba(0,0,0,1) 100%);
+  background-size: 200%;
+  background-position: 50% 50%;
+  animation: spacerotation 10s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spacerotation {
+  0% {
+    background-position: 48% 48%;
+    background-size: 200%;
+  }
+
+  33% {
+    background-position: 44% 44%;
+  }
+
+  50% {
+    background-size: 190%;
+  }
+
+  66% {
+    background-position: 52% 52%;
+  }
+
+  100% {
+    background-position: 48% 48%;
+    background-size: 200%;
+  }
+}
+
+.header-container {
+  width: 100%;
+  height: 200px;
+  max-width: 800px;
+  margin: 75px auto;
+  backface-visibility: visible;
+  transform-style: preserve-3d;
+  perspective-origin: 60% 40%;
+  perspective: 60px;
+}
+
+.header-background {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  top: 12px;
+  transform: rotateY(12deg) rotateZ(6deg) skew(40deg, 0) translateZ(25px);
+  background: rgba(244,196,48,1);
+  background: linear-gradient(265deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 30%, rgba(244,196,48,1) 30%, rgba(244,196,48,1) 70%, rgba(0,0,0,1) 70%, rgba(0,0,0,1) 100%);
+  background-size: 30px;
+  background-position: 30px 0;
+  animation: bars .15s infinite;
+  animation-timing-function: linear;
+  clip-path: polygon(0 0, 100% 80%, 20% 100%, 0 100%);
+
+  /* antialiasing */
+  outline: 1px solid transparent;
+  -webkit-backface-visibility: hidden;
+  will-change: transform;
+  -webkit-perspective: 1000;
+}
+
+@keyframes bars {
+  0% {
+    background-position: 30px 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.header-bun {
+  position: absolute;
+  right: 10px;
+  top: -55px;
+  transform: rotateY(-10deg) translateZ(-30px);
+}
+
+.header-text {
+  position: absolute;
+  left: 50%;
+  transform: translateZ(25px) translateY(50px) rotateY(6deg) rotateZ(6deg) translateX(-158px) scaleX(0.5);
+  color: var(--spacecadet);
+  font-size: 15px;
+  /* antialiasing */
+  outline: 1px solid transparent;
+  -webkit-backface-visibility: hidden;
+  will-change: transform;
+  -webkit-perspective: 1000;
+}
+
+.benny {
+  margin: auto;
+  max-width: 100%;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  margin-top: -275px;
+  transform: translateZ(0);
+}
+
+nav {
+  max-width: 100%;
+  width: 800px;
+  margin: auto;
+  text-align: center;
+  padding: 30px 0 10px;
+}
+
+.navItem {
+  margin-left: 20px;
+  padding: 3px 9px;
+  border-radius: 6px;
+  background: var(--white);
+  text-decoration: none;
+  color: var(--spacecadet);
+  display: inline-block;
+}
+
+.navItem:hover {
+  animation: eggy 2s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes eggy {
+  0% {
+    border-radius: 6px;
+  }
+
+  25% {
+    border-radius: 9px 6px 10px 8px;
+  }
+
+  50% {
+    border-radius: 12px;
+    background: var(--saffron);
+    color: var(--ultramarine);
+  }
+
+  75% {
+    border-radius: 6px 9px 8px 11px;
+  }
+
+  100% {
+    border-radius: 6px;
+  }
+}
+
+.last-ctas {
+  display: flex;
+  justify-content: center;
+}
+
+/* newsletter */
+.newsletter-content {
+  position: relative;
+  display: none !important;
+}
+
+.mc-field-group {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+  align-content: center;
+  justify-content: center;
+}
+
+.mc-field-group .email {
+  flex: 60% 0 0;
+  padding-right: 20px;
+  padding-left: 40px;
+  border: 5px solid var(--saffron);
+}
+
+.optionalParent {
+  flex: 40% 0 0;
+}
+
+section {
+  margin: 20px auto 60px;
+  max-width: 800px;
+}
+
+button,
+.button {
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 30px;
+  cursor: pointer;
+  color: var(--spacecadet);
+  background: var(--saffron);
+  background-image: linear-gradient(90deg,var(--saffron), var(--shockingpink));
+  clip-path: polygon(0 0,100% 0,100% calc(100% - 16px),calc(100% - 16px) 100%,0 100%);
+  border: none;
+  margin-left: -1px;
+}
+
+.button:hover::after {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 100%;
+  background: var(--white);
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%);
+  position: absolute;
+  animation: hoverButton .1s ease-in;
+  animation-timing-function: linear;
+  animation-fill-mode:forwards;
+}
+
+@keyframes hoverButton {
+  0% {
+    opacity: 0;
+    left: 0;
+    width: 20px;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    left: 0;
+    opacity: .5;
+    width: 100%;
+  }
+}
+
+.button-inverse {
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 30px;
+  cursor: pointer;
+  color: var(--spacecadet);
+  background: var(--saffron);
+  background-image: linear-gradient(270deg,var(--saffron), var(--shockingpink));
+  clip-path: polygon(0 0,100% 0,100% 100%,16px 100%,0 calc(100% - 16px));
+}
+
+.button-inverse:hover::after {
+  content: '';
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 100%;
+  background: var(--white);
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+  position: absolute;
+  animation: hoverButtonInverse .1s ease-in;
+  animation-timing-function: linear;
+  animation-fill-mode:forwards;
+}
+
+@keyframes hoverButtonInverse {
+  0% {
+    opacity: 0;
+    right: 0;
+    width: 20px;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    right: 0;
+    opacity: .5;
+    width: 100%;
+  }
+}
+
+.two-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.two-content .content {
+  flex: calc(50% - 20px) 0 0;
+}
+
+.content {
+  margin: auto;
+  position: relative;
+  border: 1px solid var(--white);
+}
+
+ h2 {
+  position: absolute;
+  top: -34px;
+  right: 0;
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--white);
+  text-align: right;
+  background: black;
+}
+
+h3 {
+  position: absolute;
+  top: -25px;
+  z-index: 2;
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+  color: var(--saffron);
+  font-weight: 500;
+  text-shadow: -1px 2px 2px var(--spacecadet);
+}
+
+.content > span {
+  max-width: 60%;
+  display: inline-block;
+  margin: 20px 20px 60px;
+  text-shadow: 1px 1px 5px var(--spacecadet);
+}
+
+
+
+
+/* Mobile */
+
+@media only screen and (max-width: 800px) {
+
+  .header-bun {
+    display: none;
+  }
+
+  .benny {
+    justify-content: flex-end;
+    transform: initial;
+    margin-top: -300px;
+  }
+
+  .header-background {
+    transform: rotateY(0deg) rotateZ(6deg) skew(40deg, 0) translateZ(25px);
+  }
+
+  .header-text {
+    transform: translateZ(25px) translateY(50px) rotateY(6deg) rotateZ(6deg) translateX(-110px) scaleX(0.5);
+  }
+
+  .two-content {
+    padding: 0 20px;
+    gap: 60px;
+    margin: 20px 0;
+  }
+
+  .two-content .content {
+    flex: 100% 0 0;
+  }
+
+  .last-ctas {
+    padding: 20px;
+  }
+}
+
+
+
