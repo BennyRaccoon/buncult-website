@@ -40,7 +40,7 @@ export default function Home() {
       <section className='two-content'>
         <div className='content'>
           <h2>A videogame!</h2>
-          <span>I am forging Benny the Raccoon's videogame! Ride along this adventure and get access to the secret content!</span>
+          <span>I am forging Benny the Raccoon&apos;s videogame! Ride along this adventure and get access to the secret content!</span>
         </div>
         <div className='content'>
           <h2>Dungeons and dragons</h2>
