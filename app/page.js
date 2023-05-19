@@ -44,7 +44,7 @@ export default function Home() {
         </div>
         <div className='content'>
           <h2>Dungeons and dragons</h2>
-          <span>Jump into our original world and check the custom material! Character sheets, locations and exclusive adventures!</span>
+          <span>Jump into the world of Galluvinchia and check the custom material! Character sheets, locations and exclusive adventures!</span>
         </div>
       </section>
       <section>

@@ -29,6 +29,7 @@ import './globals.css';
 
 export const metadata = {
     title: 'The Bun Cult',
+    description: 'the Buncult is a website focused on video game development centered around the adventures of Benny the Raccoon and also content for the popular tabletop game Dungeons and Dragons. Explore our world today!',
     themeColor: '#F4C430',
     openGraph: {
         title: 'The Bun Cult',
