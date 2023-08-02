@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from './page.module.css'
 
 export default function Home() {
   return (
@@ -37,6 +36,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <a class="store-link" title='store' href='https://www.etsy.com/se-en/shop/TheBunCult'>Check my the store!</a>
       <section className='two-content'>
         <div className='content'>
           <h2>A videogame!</h2>

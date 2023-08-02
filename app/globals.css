@@ -445,6 +445,34 @@ h3 {
   text-shadow: 1px 1px 5px var(--spacecadet);
 }
 
+.store-link {
+  height: auto;
+  background: linear-gradient(45deg, var(--saffron), var(--shockingpink));
+  background-size: 200% 200%;
+  animation: animateBackground 1s ease-in-out infinite;
+  text-align: center;
+  display: block;
+  margin: -20px auto 80px;
+  padding: 10px;
+  width: calc(100% - 40px);
+  max-width: 800px;
+  font-size: 26px;
+  color: var(--spacecadet);
+  text-decoration: none;
+}
+
+@keyframes animateBackground {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
 
 /* Mobile */
 
