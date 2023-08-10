@@ -2,41 +2,23 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Home() {
-  return (
+  return (<>
+    <header>
+      <div className="header-container">
+        <div className="header-background"></div>
+        <div className="header-text"><Image alt="bun from the void" src="/img/buncult.svg" width={300} height={50} /></div>
+        <div className="header-bun"><Image alt="bun from the void" src="/img/bun.png" width={300} height={300} /></div>
+      </div>
+      <div className='benny'><Image alt="benny drinking coffee" src="/img/_cafe.webp" width={256} height={293} /></div>
+      <nav>
+        <Link className="navItem" href="https://twitter.com/bennyraccoon">twitter</Link>
+        <Link className="navItem" href="https://www.instagram.com/bennyraccoon/">instagram</Link>
+        <Link className="navItem" href="https://www.youtube.com/c/bennyraccoon">youtube</Link>
+        <Link className="navItem" href="https://www.tiktok.com/@bennyraccoon">tiktok</Link>
+      </nav>
+    </header>
     <main>
-      <section>
-        <div className='newsletter-content'>
-          <h3>Check our newsletter!</h3>
-          <div id="mc_embed_signup">
-            <form action="https://gmail.us3.list-manage.com/subscribe/post?u=6ef6c6b7c05521adfa37922e8&amp;id=c157169537&amp;f_id=002a47e2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_self">
-              <div id="mc_embed_signup_scroll">
-                <div className="mc-field-container">
-                  <div className="mc-field-group">
-                    <input type="email" placeholder='email@gmail.com' name="EMAIL" className="required email" id="mce-EMAIL" required/>
-                    <span id="mce-EMAIL-HELPERTEXT" className="helper_text"></span>
-                    <input type="submit" name="subscribe" id="mc-embedded-subscribe" className="button"/>
-                    <div style={{position: 'absolute', left: '-5000px', display: 'none'}} aria-hidden="true"><input type="text" name="b_6ef6c6b7c05521adfa37922e8_c157169537" tabIndex="-1" defaultValue=""/></div>
-                  </div>
-                </div>
-                <div id="mce-responses" className="clear foot">
-                  <div className="response" id="mce-error-response" style={{display: 'none'}}></div>
-                  <div className="response" id="mce-success-response" style={{display: 'none'}}></div>
-                </div>  
-                <div className="optionalParent">
-                  <div className="clear foot">
-                    <p className="brandingLogo">
-                      <Link href="http://eepurl.com/ioo50I" title="Mailchimp - email marketing made easy and fun">
-                        <Image src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg" width={0} height={0}/>
-                      </Link>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
-      <a class="store-link" title='store' href='https://www.etsy.com/se-en/shop/TheBunCult'>Check my the store!</a>
+      <Link className="store-link" title='store' href='https://www.etsy.com/se-en/shop/TheBunCult'>Check my the store!</Link>
       <section className='two-content'>
         <div className='content'>
           <h2>A videogame!</h2>
@@ -54,5 +36,6 @@ export default function Home() {
         </div>
       </section>
     </main>
+  </>
   )
 }

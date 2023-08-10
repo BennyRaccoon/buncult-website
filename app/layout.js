@@ -55,20 +55,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={marketFont.variable}>
         <body>
-            <header>
-                <div className="header-container">
-                    <div className="header-background"></div>
-                    <div className="header-text"><Image src="/img/buncult.svg" width={300} height={50}/></div>
-                    <div className="header-bun"><Image src="/img/bun.png" width={300} height={300}/></div>
-                </div>
-                <div className='benny'><Image src="/img/_cafe.webp" width={256} height={293}/></div>
-                <nav>
-                    <Link className="navItem" href="https://twitter.com/bennyraccoon">twitter</Link>
-                    <Link className="navItem" href="https://www.instagram.com/bennyraccoon/">instagram</Link>
-                    <Link className="navItem" href="https://www.youtube.com/c/bennyraccoon">youtube</Link>
-                    <Link className="navItem" href="https://www.tiktok.com/@bennyraccoon">tiktok</Link>
-                </nav>
-            </header>
             {children}
             <Analytics />
         </body>
