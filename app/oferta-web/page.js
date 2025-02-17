@@ -19,7 +19,7 @@ export default function Page() {
         <div className="plan">
           <h2>Crecimiento</h2>
           <div className="price">$2,500 MXN / mes</div>
-          <div className="priceYear"><del>$30,000 MXN</del>$27,500 MXN / año</div>
+          <div className="priceYear"><del>$30,000</del>$27,500 MXN / año</div>
           <ul className="features">
             <li><span className="icon">✔</span> Dominio y Correos</li>
             <li><span className="icon">✔</span> 2h gratis al mes de Soporte o Consultoría</li>
@@ -32,9 +32,8 @@ export default function Page() {
         <div className="plan elite">
           <h2>Élite</h2>
           <div className="price">$4,000 MXN / mes</div>
-          <div className="priceYear"><del>$48,000 MXN</del>$40,000 MXN / año</div>
+          <div className="priceYear"><del>$48,000</del>$40,000 MXN / año</div>
           <ul className="features">
-            <li><span className="icon">✔</span> Todo lo de <strong>Crecimiento</strong></li>
             <li><span className="icon">✔</span> 4h de Soporte, Consultaria, Diseño o Desarrollo</li>
             <li><span className="icon">✔</span> Horas extra: $1,000 MXN / mes</li>
             <li><span className="icon">✔</span> Reporte mensual de Analíticas + Sugerencias de Crecimiento</li>
@@ -61,32 +60,32 @@ export default function Page() {
         </tr>
         <tr>
           <td>Tiempo de trabajo adicional</td>
-          <td><span className="icon">✖</span></td>
+          <td><span className="red">✖</span></td>
           <td> 2h Soporte o Consultoría</td>
           <td> 4h Soporte, Consultoría, Desarrollo o Diseño</td>
         </tr>
         <tr>
           <td>Reportes de Analíticas</td>
-          <td><span className="icon">✖</span></td>
+          <td><span className="red">✖</span></td>
           <td>Reporte mensual</td>
           <td>Reporte + Sugerencias de Crecimiento</td>
         </tr>
         <tr>
           <td>Desarrollo web</td>
-          <td><span className="icon">✖</span></td>
-          <td><span className="icon">✖</span></td>
+          <td><span className="red">✖</span></td>
+          <td><span className="red">✖</span></td>
           <td>Desarrollo web incluido con las horas gratis (hasta 5 páginas)</td>
         </tr>
         <tr>
           <td>Beneficios de Pago Anual</td>
-          <td><span className="icon">✖</span></td>
+          <td><span className="red">✖</span></td>
           <td><span className="icon">🎁</span> 1 mes gratis</td>
           <td><span className="icon">🎁</span> 2 meses gratis</td>
         </tr>
         <tr>
           <td>Add-on de E-commerce</td>
-          <td><span className="icon">✖</span></td>
-          <td><span className="icon">✖</span></td>
+          <td><span className="red">✖</span></td>
+          <td><span className="red">✖</span></td>
           <td><span className="icon">🛒</span> +$5,000 MXN/mes por 6 meses</td>
         </tr>
       </table>
