@@ -86,6 +86,11 @@ th {
     color: cornflowerblue;
 }
 
+.table-container {
+    max-width: 100%;
+    overflow: auto;
+}
+
 .comparison-table {
     margin: auto;
     background: white;
