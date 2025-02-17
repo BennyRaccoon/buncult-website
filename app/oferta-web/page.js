@@ -56,7 +56,7 @@ export default function Page() {
             <th className="highlight">Élite</th>
           </tr>
           <tr>
-            <th>Correos y Dominio</th>
+            <th>Dominio, Servidor y Correos</th>
             <td>Incluido</td>
             <td>Incluido</td>
             <td>Incluido</td>
