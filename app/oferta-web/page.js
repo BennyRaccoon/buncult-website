@@ -12,7 +12,7 @@ export default function Page() {
           <div className="priceYear">$15,000 MXN/año</div>
           <ul className="features">
             <li><span className="icon">✔</span> Dominio, Servidor y Correos</li>
-            <li><span className="icon">✔</span> Horas extra: $2,000 MXN/mes</li>
+            <li><span className="icon">✔</span> Horas extra: $2,000 MXN/hora</li>
             <li><span className="icon">💡</span> Todos nuestros planes incluyen infraestructura optimizada y hosting confiable, sin costos ocultos ni preocupaciones técnicas.</li>
           </ul>
         </div>
@@ -24,7 +24,7 @@ export default function Page() {
           <ul className="features">
             <li><span className="icon">✔</span> Dominio, Servidor y Correos</li>
             <li><span className="icon">✔</span> 2h gratis al mes de Soporte o Consultoría</li>
-            <li><span className="icon">✔</span> Horas extra: $1,500 MXN/mes</li>
+            <li><span className="icon">✔</span> Horas extra: $1,500 MXN/hora</li>
             <li><span className="icon">✔</span> Reporte Mensual de Analíticas</li>
             <li><span className="icon">🎁</span> Pago Anual: 1 Mes Gratis</li>
           </ul>
@@ -37,7 +37,7 @@ export default function Page() {
           <ul className="features">
             <li><span className="icon">✔</span> Dominio, Servidor, Correos y Analytics</li>
             <li><span className="icon">✔</span> 4h gratis de Soporte, Consultaria, Diseño o Desarrollo</li>
-            <li><span className="icon">✔</span> Horas extra: $1,000 MXN / mes</li>
+            <li><span className="icon">✔</span> Horas extra: $1,000 MXN/hora</li>
             <li><span className="icon">✔</span> Reporte mensual de Analíticas + Sugerencias de Crecimiento</li>
             <li><span className="icon">🎨</span> <strong>Horas gratis pueden usarse para el desarrollo web (hasta 5 páginas)</strong></li>
             <li><span className="icon">🎁</span> Pago Anual: 2 Meses Gratis</li>
@@ -62,10 +62,16 @@ export default function Page() {
             <td>Incluido</td>
           </tr>
           <tr>
-            <th>Tiempo de trabajo adicional</th>
+            <th>Tiempo de trabajo incluido</th>
             <td><span className="red">✖</span></td>
             <td> 2h Soporte o Consultoría</td>
             <td> 4h Soporte, Consultoría, Desarrollo o Diseño</td>
+          </tr>
+          <tr>
+            <th>Coste de la hora extra</th>
+            <td>$2,000 MXN/hora</td>
+            <td>$1,500 MXN/hora</td>
+            <td>$1,000 MXN/hora</td>
           </tr>
           <tr>
             <th>Reportes de Analíticas</th>
