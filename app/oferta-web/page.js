@@ -35,7 +35,7 @@ export default function Page() {
           <div className="priceYear"><del>$48,000</del> $40,000 MXN / año</div>
           <ul className="features">
             <li><span className="icon">✔</span> Dominio, Correos, Analytics</li>
-            <li><span className="icon">✔</span> 4h de Soporte, Consultaria, Diseño o Desarrollo</li>
+            <li><span className="icon">✔</span> 4h gratis de Soporte, Consultaria, Diseño o Desarrollo</li>
             <li><span className="icon">✔</span> Horas extra: $1,000 MXN / mes</li>
             <li><span className="icon">✔</span> Reporte mensual de Analíticas + Sugerencias de Crecimiento</li>
             <li><span className="icon">🎨</span> <strong>Horas gratis pueden usarse para el desarrollo web (hasta 5 páginas)</strong></li>
