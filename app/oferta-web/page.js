@@ -41,6 +41,52 @@ export default function Page() {
           <a href="#" className="btn">Elegir Plan</a>
         </div>
       </div>
+
+      <h2>Comparación de Planes</h2>
+      <table className="comparison-table">
+        <tr>
+          <th>Característica</th>
+          <th>Esencial</th>
+          <th>Crecimiento</th>
+          <th className="highlight">Élite</th>
+        </tr>
+        <tr>
+          <td>Correos y Dominio</td>
+          <td><span className="icon">✔</span> Incluido</td>
+          <td><span className="icon">✔</span> Incluido</td>
+          <td><span className="icon">✔</span> Incluido</td>
+        </tr>
+        <tr>
+          <td>Tiempo de trabajo adicional</td>
+          <td><span className="icon">✖</span> No incluido</td>
+          <td><span className="icon">✔</span> 2h Soporte y Consultoría</td>
+          <td><span className="icon">✔</span> 4h Soporte, Consultoría, Desarrollo y Diseño</td>
+        </tr>
+        <tr>
+          <td>Reportes de Analíticas</td>
+          <td><span className="icon">✖</span> No incluido</td>
+          <td><span className="icon">✔</span> Reporte mensual</td>
+          <td><span className="icon">✔</span> Reporte + Sugerencias de Crecimiento</td>
+        </tr>
+        <tr>
+          <td>Sitio Web Incluido</td>
+          <td><span className="icon">✖</span> No incluido</td>
+          <td><span className="icon">✖</span> No incluido</td>
+          <td><span className="icon">✔</span> Sitio web profesional (hasta 5 páginas)</td>
+        </tr>
+        <tr>
+          <td>Beneficios de Pago Anual</td>
+          <td><span className="icon">✖</span> No disponible</td>
+          <td><span className="icon">🎁</span> 1 mes gratis</td>
+          <td><span className="icon">🎁</span> 2 meses gratis</td>
+        </tr>
+        <tr>
+          <td>Add-on de E-commerce</td>
+          <td><span className="icon">✖</span> No disponible</td>
+          <td><span className="icon">✖</span> No disponible</td>
+          <td><span className="icon">🛒</span> +$5,000 MXN/mes por 6 meses</td>
+        </tr>
+      </table>
     </main>
   )
 }
