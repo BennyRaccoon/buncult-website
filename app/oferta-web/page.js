@@ -13,7 +13,6 @@ export default function Page() {
                   <li>✖ Sin Diseño/Desarrollo Web</li>
                   <li>⚡ Desarrollo Extra: $2,000 MXN/h</li>
               </ul>
-              <a href="#" className="btn">Elegir Plan</a>
           </div>
           
           <div className="plan">
@@ -27,7 +26,6 @@ export default function Page() {
                   <li>⚡ Desarrollo Extra: $1,600 MXN/h</li>
                   <li>🎁 Pago Anual: 1 Mes Gratis</li>
               </ul>
-              <a href="#" className="btn">Elegir Plan</a>
           </div>
           
           <div className="plan elite">
@@ -42,7 +40,6 @@ export default function Page() {
                   <li>🎁 Pago Anual: 2 Meses Gratis</li>
                   <li className="ecommerce-add">🛒 ¿Necesitas E-commerce? +$5,000 MXN/mes por 6 meses</li>
               </ul>
-              <a href="#" className="btn">Elegir Plan</a>
           </div>
       </div>
   
