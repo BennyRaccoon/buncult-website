@@ -8,8 +8,8 @@ export default function Page() {
       <div className="container">
         <div className="plan">
           <h2>Esencial</h2>
-          <div className="price">$1,000 MXN/mes</div>
-          <div className="priceYear">$12,000 MXN/año</div>
+          <div className="price">$1,250 MXN/mes</div>
+          <div className="priceYear">$15,000 MXN/año</div>
           <ul className="features">
             <li><span className="icon">✔</span> Dominio, Servidor y Correos</li>
             <li><span className="icon">✔</span> Horas extra: $2,000 MXN/mes</li>
