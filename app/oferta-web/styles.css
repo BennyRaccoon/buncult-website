@@ -1,10 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     text-align: center;
+    color: black; /* Ensure all text is black */
 }
+
 .container {
     max-width: 900px;
     margin: 50px auto;
@@ -13,6 +14,7 @@ body {
     gap: 20px;
     flex-wrap: wrap;
 }
+
 .plan {
     background: white;
     padding: 20px;
@@ -21,23 +23,45 @@ body {
     width: 280px;
     text-align: center;
 }
+
 .plan h2 {
     margin: 0;
     padding: 10px 0;
 }
+
 .price {
     font-size: 24px;
     font-weight: bold;
     color: #333;
     margin: 10px 0;
 }
+
 .features {
     list-style: none;
     padding: 0;
 }
+
 .features li {
-    padding: 8px 0;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
 }
+
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #d8b4fe; /* Lilac background */
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
 .btn {
     display: inline-block;
     margin-top: 15px;
@@ -48,40 +72,23 @@ body {
     border-radius: 5px;
     font-weight: bold;
 }
+
 .elite {
     background: #004085;
     color: white;
 }
+
 .elite .btn {
     background: #ffcc00;
     color: #000;
 }
+
 .ecommerce-add {
     font-size: 14px;
     margin-top: 10px;
     color: #f8d210;
 }
-.comparison-table {
-    width: 90%;
-    max-width: 900px;
-    margin: 40px auto;
-    border-collapse: collapse;
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.comparison-table th, .comparison-table td {
-    padding: 15px;
-    border: 1px solid #ddd;
-    text-align: center;
-}
-.comparison-table th {
-    background: #007BFF;
-    color: white;
-}
-.highlight {
-    background: #ffcc00;
-    font-weight: bold;
-}
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
