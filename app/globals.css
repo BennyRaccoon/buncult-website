@@ -88,7 +88,7 @@ select {
 
 body {
   font-family: var(--font-market);
-  background-color: var(--white);
+/*   background-color: var(--white);
   color: var(--white);
   background: var(--spacecadet);
   background: rgb(0,0,0);
@@ -96,9 +96,9 @@ body {
   background-size: 200%;
   background-position: 50% 50%;
   animation: spacerotation 10s infinite;
-  animation-timing-function: linear;
+  animation-timing-function: linear; */
 }
-
+/* 
 @keyframes spacerotation {
   0% {
     background-position: 48% 48%;
@@ -607,4 +607,4 @@ section > .pageTitle {
 }
 
 
-
+ */
