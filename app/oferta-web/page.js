@@ -55,37 +55,37 @@ export default function Page() {
           <th className="highlight">Élite</th>
         </tr>
         <tr>
-          <td>Correos y Dominio</td>
+          <th>Correos y Dominio</th>
           <td>Incluido</td>
           <td>Incluido</td>
           <td>Incluido</td>
         </tr>
         <tr>
-          <td>Tiempo de trabajo adicional</td>
+          <th>Tiempo de trabajo adicional</th>
           <td><span className="red">✖</span></td>
           <td> 2h Soporte o Consultoría</td>
           <td> 4h Soporte, Consultoría, Desarrollo o Diseño</td>
         </tr>
         <tr>
-          <td>Reportes de Analíticas</td>
+          <th>Reportes de Analíticas</th>
           <td><span className="red">✖</span></td>
           <td>Reporte mensual</td>
           <td>Reporte + Sugerencias de Crecimiento</td>
         </tr>
         <tr>
-          <td>Desarrollo web</td>
+          <th>Desarrollo web</th>
           <td><span className="red">✖</span></td>
           <td><span className="red">✖</span></td>
           <td>Desarrollo web incluido con las horas gratis (hasta 5 páginas)</td>
         </tr>
         <tr>
-          <td>Beneficios de Pago Anual</td>
+          <th>Beneficios de Pago Anual</th>
           <td><span className="red">✖</span></td>
           <td><span className="icon">🎁</span> 1 mes gratis</td>
           <td><span className="icon">🎁</span> 2 meses gratis</td>
         </tr>
         <tr>
-          <td>Add-on de E-commerce</td>
+          <th>Add-on de E-commerce</th>
           <td><span className="red">✖</span></td>
           <td><span className="red">✖</span></td>
           <td><span className="icon">🛒</span> +$5,000 MXN/mes por 6 meses</td>
