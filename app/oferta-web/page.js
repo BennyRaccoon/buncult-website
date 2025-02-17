@@ -8,22 +8,23 @@ export default function Page() {
       <div className="container">
         <div className="plan">
           <h2>Esencial</h2>
-          <div className="price">$1,000 MXN / mes</div>
-          <div className="priceYear">$12,000 MXN / año</div>
+          <div className="price">$1,000 MXN/mes</div>
+          <div className="priceYear">$12,000 MXN/año</div>
           <ul className="features">
-            <li><span className="icon">✔</span> Dominio y Correos</li>
-            <li><span className="icon">✔</span> Horas extra: $2,000 MXN / mes</li>
+            <li><span className="icon">✔</span> Dominio, Servidor y Correos</li>
+            <li><span className="icon">✔</span> Horas extra: $2,000 MXN/mes</li>
+            <li><span className="icon">💡</span> Todos nuestros planes incluyen infraestructura optimizada y hosting confiable, sin costos ocultos ni preocupaciones técnicas.</li>
           </ul>
         </div>
 
         <div className="plan">
           <h2>Crecimiento</h2>
-          <div className="price">$2,500 MXN / mes</div>
-          <div className="priceYear"><del>$30,000</del> $27,500 MXN / año</div>
+          <div className="price">$2,500 MXN/mes</div>
+          <div className="priceYear"><del>$30,000</del> $27,500 MXN/año</div>
           <ul className="features">
-            <li><span className="icon">✔</span> Dominio y Correos</li>
+            <li><span className="icon">✔</span> Dominio, Servidor y Correos</li>
             <li><span className="icon">✔</span> 2h gratis al mes de Soporte o Consultoría</li>
-            <li><span className="icon">✔</span> Horas extra: $1,500 MXN / mes</li>
+            <li><span className="icon">✔</span> Horas extra: $1,500 MXN/mes</li>
             <li><span className="icon">✔</span> Reporte Mensual de Analíticas</li>
             <li><span className="icon">🎁</span> Pago Anual: 1 Mes Gratis</li>
           </ul>
@@ -31,10 +32,10 @@ export default function Page() {
 
         <div className="plan elite">
           <h2>Élite</h2>
-          <div className="price">$4,000 MXN / mes</div>
-          <div className="priceYear"><del>$48,000</del> $40,000 MXN / año</div>
+          <div className="price">$4,000 MXN/mes</div>
+          <div className="priceYear"><del>$48,000</del> $40,000 MXN/año</div>
           <ul className="features">
-            <li><span className="icon">✔</span> Dominio, Correos, Analytics</li>
+            <li><span className="icon">✔</span> Dominio, Servidor, Correos y Analytics</li>
             <li><span className="icon">✔</span> 4h gratis de Soporte, Consultaria, Diseño o Desarrollo</li>
             <li><span className="icon">✔</span> Horas extra: $1,000 MXN / mes</li>
             <li><span className="icon">✔</span> Reporte mensual de Analíticas + Sugerencias de Crecimiento</li>
