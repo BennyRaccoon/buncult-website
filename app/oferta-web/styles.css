@@ -1,9 +1,13 @@
 body {
-    margin: 0;
+    margin: 200px 0;
     padding: 0;
     background-color: #f4f4f4;
     text-align: center;
     color: black; /* Ensure all text is black */
+}
+
+del {
+    color: #434343;
 }
 
 .container {
@@ -47,6 +51,14 @@ body {
     text-align: left;
     justify-content: start;
     gap: 10px;
+}
+
+.red {
+    color: maroon;
+}
+
+td:nth-child(1) {
+    text-align: left;
 }
 
 .icon {
