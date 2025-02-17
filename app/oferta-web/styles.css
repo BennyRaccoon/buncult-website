@@ -7,7 +7,7 @@ body {
 }
 
 del {
-    color: #434343;
+    color: #999;
 }
 
 .container {
@@ -57,8 +57,9 @@ del {
     color: maroon;
 }
 
-td:nth-child(1) {
-    text-align: left;
+th {
+    background: #eaeaea;
+    border-radius: 4px;
 }
 
 .icon {
@@ -81,7 +82,16 @@ td:nth-child(1) {
 .ecommerce-add {
     font-size: 14px;
     margin-top: 10px;
-    color: #f8d210;
+    color: cornflowerblue;
+}
+
+.comparison-table {
+    margin: auto;
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+    max-width: 880px;
+    margin-top: 16px;
 }
 
 @media (max-width: 768px) {
